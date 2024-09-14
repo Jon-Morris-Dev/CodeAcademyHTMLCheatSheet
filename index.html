@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cheat Sheet: HTML Table</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>MY CHEAT SHEET</header>
+    <nav>
+      <ul>
+        <li><a href="#MARKUP">MARKUP</a></li>
+        <li><a href="#DOCUMENT INFORMATION">DOCUMENT INFORMATION </a></li>
+        <li><a href="#DOCUMENT STRUCTURE">DOCUMENT STRUCTURE</a></li>
+        <li><a href="#TEXT FORMATTING">TEXT FORMATTING </a></li>
+        <li><a href="#LINKS FORMATTING">LINKS FORMATTING</a></li>
+        <li><a href="#IMAGE FORMATTING">IMAGE FORMATTING </a></li>
+        <li><a href="#LIST FORMATING">LIST FORMATING</a></li>
+        <li>
+          <a href="#FORMS AND FORMATTING ATTRIBUTES"
+            >FORMS AND FORMATTING ATTRIBUTES
+          </a>
+        </li>
+        <li><a href="#TABLES FORMATTING">TABLES FORMATTING </a></li>
+        <li><a href="#OBJECTS AND IFRAMES">OBJECTS AND IFRAMES</a></li>
+        <li><a href="#SOME OTHER USEFUL TAGS">SOME OTHER USEFUL TAGS</a></li>
+      </ul>
+    </nav>
+    <!-- MARKUP -->
+    <br />
+    <br />
+    <h2>BASIC MARKUP</h2>
+    <br />
+    <br />
+    <div id="MARKUP">
+      <h3>This is the format you use to start all html including closing tags</h3>
+      <table>
+        <tr>
+          <td>&lt;!DOCTYPE html&gt;</td>
+        </tr>
+        <tr>
+          <td>&lt;html&gt;</td>
+          <td>Used to identify your document as html 5</td>
+        </tr>
+        <tr>
+          <td>&lt;head&gt;</td>
+          <td>
+            a container for metadata (data about data) and is placed between the
+            &lt;html&gt; tag and the &lt;body&gt; tag
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;title&gt;&lt;/title&gt</td>
+          <td>Page Title</td>
+        </tr>
+        <tr>
+          <td>&lt;/head&gt;</td>
+          <td>Description of the document</td>
+        </tr>
+        <tr>
+          <td>&lt;body&gt;</td>
+          <td>Content that the user will see</td>
+        </tr>
+        <tr>
+          <td>&lt;h1&gt;&lt;/h1&gt;</td>
+          <td>My First Heading</td>
+        </tr>
+        <tr>
+          <td>&lt;p&gt;&lt;/p&gt;</td>
+          <td>paragraph</td>
+        </tr>
+        <tr>
+          <td>&lt;/body&gt;</td>
+        </tr>
+        <tr>
+          <td>&lt;/html&gt;</td>
+        </tr>
+      </table>
+      <br />
+      <br />
+      <h2>ADDITIONAL MARKUP AND EXPLANATION</h2>
+      <br />
+      <br />
+      <table>
+        <td>&lt;html lang="en"&gt;&lt;/html&gt;</td>
+        <td>Used to identify the language currently set to English</td>
+        <tr>
+          <td>&lt;meta charset="UTF-8"/&gt;</td>
+          <td>
+            The charset attribute specifies the character encoding for the HTML
+            Document
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+          <td>This is to link your css to your html</td>
+        </tr>
+        <tr>
+          <td>&lt;title&gt;&lt;/title&gt;</td>
+          <td>Title for the page that shows up in the browser title bar</td>
+        </tr>
+      </table>
+    </div>
+
+    <br />
+    <br />
+    <div id="DOCUMENT INFORMATION">
+      <h2>DOCUMENT INFORMATION</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;base/&gt;</td>
+          <td>Usefull for specifying relative links in a document</td>
+        </tr>
+        <tr>
+          <td>&lt;style&gt;&lt;/style&gt;</td>
+          <td>Contains styles for the html document</td>
+        </tr>
+
+        <tr>
+          <td>&lt;meta/&gt;</td>
+          <td>
+            Contains additional information about the page, author, page
+            description and other hidden page info
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;script&gt;&lt;/script&gt;</td>
+          <td>Contains all scripts internal or external</td>
+        </tr>
+
+        <tr>
+          <td>&lt;link/&gt;</td>
+          <td>
+            Used to create relationships with external pages and stylesheets
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+    <!-- DOCUMENT STRUCTURE -->
+    <div id="DOCUMENT STRUCTURE"></div>
+
+    <h2>DOCUMENT STRUCTURE</h2>
+    <br />
+    <br />
+    <table>
+      <tr>
+        <td>&lt;h1&gt;&lt;/h1&gt; ... &lt;h6&gt &lt;/h6&gt;</td>
+        <td>
+          All six levels of heading with 1 being the most prominent and 6 being
+          the least prominent
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;p&gt;&lt;/p&gt;</td>
+        <td>Used to organize paragraph text</td>
+      </tr>
+
+      <tr>
+        <td>&lt;div&gt;&lt;/div&gt;</td>
+        <td>A generic container used to denote a page section</td>
+      </tr>
+
+      <tr>
+        <td>&lt;span&gt;&lt;/span&gt;</td>
+        <td>
+          Inline section or block container used for creating inline style
+          elements
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;br/&gt;</td>
+        <td>Creates a line-break</td>
+      </tr>
+
+      <tr>
+        <td>&lt;hr&gt;</td>
+        <td>a sectional break into HTML</td>
+      </tr>
+    </table>
+    <div>
+      <!-- TEXT FORMATTING -->
+
+      <br />
+      <br />
+      <div id="TEXT FORMATTING"></div>
+      <h2>TEXT FORMATTING</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;strong&gt;&lt;/strong&gt; and &lt;b&gt;&lt;/b&gt;</td>
+          <td>Makes text contained in the tag as bold</td>
+        </tr>
+
+        <tr>
+          <td>&lt;em&gt;&lt;/em&gt; and &lt;i&gt;&lt;/i&gt;</td>
+          <td>make the text contained in the tag as italic</td>
+        </tr>
+
+        <tr>
+          <td>&lt;del&gt;&lt;/del&gt;</td>
+          <td>Creates a strike through the text element</td>
+        </tr>
+
+        <tr>
+          <td>&lt;pre&gt;&lt;/pre&gt;</td>
+          <td>Preformatted monospace text block with some spacing intact</td>
+        </tr>
+
+        <tr>
+          <td>&lt;blockquote&gt;&lt;/blockquote&gt;</td>
+          <td>Contains long paragraphs of quotations often cited</td>
+        </tr>
+
+        <tr>
+          <td>&lt;abbr&gt;&lt;/abbr&gt;</td>
+          <td>
+            Contains abbreviations while also making the full form available
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;address&gt;&lt;/address&gt;</td>
+          <td>Used to display contact information</td>
+        </tr>
+
+        <tr>
+          <td>&lt;code&gt;&lt;/code&gt;</td>
+          <td>Used to display inline code snippets</td>
+        </tr>
+
+        <tr>
+          <td>&lt;q&gt;&lt;/q&gt;</td>
+          <td>Defines a short inline quotation</td>
+        </tr>
+
+        <tr>
+          <td>&lt;sub&gt;&lt;/sub&gt;</td>
+          <td>Defines subscripted text</td>
+        </tr>
+
+        <tr>
+          <td>&lt;sub&gt;&lt;/sub&gt;</td>
+          <td>Defines subscripted text</td>
+        </tr>
+
+        <tr>
+          <td>&lt;sup&gt;&lt;/sup&gt;</td>
+          <td>Defines superscripted text</td>
+        </tr>
+
+        <tr>
+          <td>&lt;kbd&gt; &lt;&lt;kbd&gt;</td>
+          <td>text as keyboard input</td>
+        </tr>
+
+        <tr>
+          <td>&lt;small&gt;&lt;/small&gt;</td>
+          <td>Specifies small text</td>
+        </tr>
+
+        <tr>
+          <td>&lt;ins&gt;&lt;/ins&gt;</td>
+          <td>a text that has been inserted into the document</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- LINKS FORMATIING -->
+    <div id="LINKS FORMATTING">
+      <br />
+      <br />
+      <h2>LINKS FORMATTING</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;a&gt;&lt;/a&gt;</td>
+          <td>
+            anchor tag defines a hyperlink, which is used to link from one page
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;a href="url"&gt;&lt;/a&gt;</td>
+          <td>Used to link to external or internal pages of a website</td>
+        </tr>
+
+        <tr>
+          <td>&lt;a href="Jmorris:email@example.com"&gt; &lt;/a&gt;</td>
+          <td>Used to link to an email address</td>
+        </tr>
+
+        <tr>
+          <td>&lt;a href="name"&gt; &lt;/a&gt;</td>
+          <td>Used to link to a document element</td>
+        </tr>
+
+        <tr>
+          <td>&lt;a href="tel://####-####-##" &gt; &lt;/a&gt;</td>
+          <td>Used to display phone numbers and make them clickable</td>
+        </tr>
+      </table>
+    </div>
+    <!-- IMAGE FORMATING -->
+
+    <div id="IMAGE FORMATTING">
+      <br />
+      <br />
+      <h2>IMAGE FORMATTING</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;img src="url" alt="text"&gt;</td>
+          <td>
+            Used to display images in a webpage where src="url" contains the
+            link to the image source and alt="" contains an alternative text to
+            display when the image is not displayed
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- LIST FORMATING -->
+    <div id="LIST FORMATING">
+      <br />
+      <br />
+      <h2>LIST FORMATTING</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;ol&gt; &lt;/ol&gt;</td>
+          <td>to create ordered lists with numbers in the items</td>
+        </tr>
+
+        <tr>
+          <td>&lt;ul&gt; &lt;/ul&gt;</td>
+          <td>Used to display unordered lists with numbers in the items</td>
+        </tr>
+        <tr>
+          <td>&lt;li&gt; &lt;/li&gt;</td>
+          <td>Contains list items inside ordered and unordered lists</td>
+        </tr>
+        <tr>
+          <td>&lt;dl&gt; &lt;/dl&gt;</td>
+          <td>Contains list item definitions</td>
+        </tr>
+
+        <tr>
+          <td>&lt;dt&gt; &lt;/dt&gt;</td>
+          <td>Definition of single term inline with body content</td>
+        </tr>
+        <tr>
+          <td>&lt;dd&gt;&lt;/dd&gt;</td>
+          <td>The descrpition of the defined term</td>
+        </tr>
+      </table>
+    </div>
+    <!-- FORMS AND FORMATTING ATTRIBUTES -->
+    <br />
+    <br />
+    <h2>FORMS FORMATTING AND ATTRIBUTES</h2>
+    <div id="FORMS AND FORMATTING ATTRIBUTES">
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;form action="url"&gt; &lt;/form&gt;</td>
+          <td>
+            Form element creates a form and action="" specifies where the data
+            is to be sent to when the visitor submits the form
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Supported attributes -->
+    <br />
+    <br />
+    <h2>SUPPORTED ATTRIBUTES</h2>
+    <br />
+    <br />
+    <table>
+      <tr>
+        <td>method=</td>
+        <td>
+          somefunction"()"Contains the type of request (GET, POST... etc) which
+          dictates how to send the data of the form
+        </td>
+      </tr>
+      <tr>
+        <td>enctype=</td>
+        <td>
+          ""Dictates how the data is to be encoded when the data is sent to the
+          web server.
+        </td>
+      </tr>
+      <tr>
+        <td>autocomplete=</td>
+        <td>"" if the autocomplete functionality is enabled or not</td>
+      </tr>
+      <tr>
+        <td>novalidate=</td>
+        <td>””Dictates if the form will be validated or not</td>
+      </tr>
+      <tr>
+        <td>accept-charset=</td>
+        <td>""Identifies the character encoding upon form submission</td>
+      </tr>
+
+      <tr>
+        <td>target=</td>
+        <td>
+          ""Tell where to display the information upon form submission. Possible
+          values: '_blank', '_self', '_parent', '_top'
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;fieldset disabled=</td>
+        <td>
+          "disabled"&gt; &lt;/fieldset&gt; Identifies the group of all fields in
+          the form
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;label for=""&gt; &lt;/label&gt;</td>
+        <td>A simple field label telling the user what to type in the field</td>
+      </tr>
+
+      <tr>
+        <td>&lt;legend&gt; &lt;/legend&gt;</td>
+        <td>The form legend acts as a caption for the fieldset element</td>
+      </tr>
+
+      <tr>
+        <td>&lt;input type=</td>
+        <td>
+          &lt;/"text/email/number/color/date"&gt; Input is the input field where
+          the user can input various types of data
+        </td>
+      </tr>
+      <tr>
+        <td>name=</td>
+        <td>"" Describes the name of the form</td>
+      </tr>
+
+      <tr>
+        <td>width=</td>
+        <td>"" Specifies the width of an input field</td>
+      </tr>
+
+      <tr>
+        <td>value=</td>
+        <td>"” Describes the value of the input information field</td>
+      </tr>
+
+      <tr>
+        <td>size=</td>
+        <td>"" the input element width in characters</td>
+      </tr>
+
+      <tr>
+        <td>maxlength=</td>
+        <td>""Specifies the maximum input character numbers</td>
+      </tr>
+
+      <tr>
+        <td>required=</td>
+        <td>
+          ""Specifies if the input field is required to fill in before
+          submitting the form
+        </td>
+      </tr>
+
+      <tr>
+        <td>step=</td>
+        <td>""Identifies the legal number intervals of the input field</td>
+      </tr>
+
+      <tr>
+        <td>&lt;textarea name=</td>
+        <td>
+          "" id="" cols="30" rows="10"&gt; Specifies a large input text field
+          for longer messages
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;/textarea&gt;</td>
+        <td>creates a text area</td>
+      </tr>
+
+      <tr>
+        <td>&lt;select name= ""&gt; &lt;/select&gt;</td>
+        <td>
+          Describes a dropdown box for users to select from variety of choices
+        </td>
+      </tr>
+    </table>
+    <!—TABLES FORMATTING -->
+    <div id="TABLES FORMATTING">
+      <br />
+      <br />
+      <h2>Tables Formatting</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;table&gt;&lt;/table&gt;</td>
+          <td>Defines and contains all table related content</td>
+        </tr>
+
+        <tr>
+          <td>&lt;caption&gt;&lt;/caption&gt;</td>
+          <td>A description of what table is and what it contains</td>
+        </tr>
+
+        <tr>
+          <td>&lt;thead&gt;&lt;/thead&gt;</td>
+          <td>
+            The table headers contain the type of information defined in each
+            column underneath
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;tbody&gt;&lt;/tbody&gt;</td>
+          <td>Contains the tables data or information</td>
+        </tr>
+
+        <tr>
+          <td>&lt;tfoot&gt;&lt;/tfoot&gt;</td>
+          <td>Defines table footer</td>
+        </tr>
+
+        <tr>
+          <td>&lt;tr&gt;&lt;/tr&gt;</td>
+          <td>Contains the information to be included in a table row</td>
+        </tr>
+
+        <tr>
+          <td>&lt;th&gt;&lt;/th&gt;</td>
+          <td>
+            Contains the information to be included in a single table header
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;td&gt;&lt;/td&gt;</td>
+          <td>Contains actual information in a table cell</td>
+        </tr>
+        <tr>
+          <td>&lt;colgroup&gt;&lt;/colgroup&gt;</td>
+          <td>Groups a single or multiple columns for formatting purposes</td>
+        </tr>
+        <tr>
+          <td>&lt;col&gt;</td>
+          <td>Defines a single column of information inside a table</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+
+    <!—OBJECTS AND IFRAMES -->
+    <div id="OBJECTS AND IFRAMES">
+      <h2>OBJECTS AND IFRAMES</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;object data=""&gt;&lt;/object&gt;</td>
+          <td>
+            Describes and embed file type including audio, video, PDF's, images
+          </td>
+        </tr>
+      </table>
+      <!-- Supported attributes -->
+      <br />
+      <br />
+      <h2>Supported attributes</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>type=</td>
+          <td>""the type of media embedded</td>
+        </tr>
+
+        <tr>
+          <td>height=</td>
+          <td>"" Describes the height of the object in pixels</td>
+        </tr>
+
+        <tr>
+          <td>width=</td>
+          <td>"" the width of the object in pixels</td>
+        </tr>
+
+        <tr>
+          <td>usemap=</td>
+          <td>""This is the name of the client-side image map in the object</td>
+        </tr>
+
+        <tr>
+          <td>&lt;iframe src="" frameborder="0"&gt;&lt;/iframe&gt</td>
+          <td>
+            ;Contains an inline frame that allows to embed external information
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;embed src="" type=""&gt;</td>
+          <td>Acts as a container for external application or plug-in</td>
+        </tr>
+
+        <tr>
+          <td>src="”</td>
+          <td>The source of the external file you're embedding</td>
+        </tr>
+        <tr>
+          <td>width=""</td>
+          <td>Describes the width of the iframe in pixels</td>
+        </tr>
+
+        <tr>
+          <td>&lt;main&gt;&lt;/main&gt;</td>
+          <td>Describes the main content of a document</td>
+        </tr>
+
+        <tr>
+          <td>&lt;article&gt;&lt;/article&gt;</td>
+          <td>Identifies an article inside a document</td>
+        </tr>
+
+        <tr>
+          <td>&lt;aside&gt;&lt;/aside&gt;</td>
+          <td>Specifies content contained in a document sidebar</td>
+        </tr>
+
+        <tr>
+          <td>&lt;section&gt;&lt;/section&gt;</td>
+          <td>Defines a section of a document</td>
+        </tr>
+
+        <tr>
+          <td>&lt;details&gt;&lt;/details&gt;</td>
+          <td>Describes additonal information that user can view or hide</td>
+        </tr>
+
+        <tr>
+          <td>&lt;dialog&gt;&lt;/dialog&gt;</td>
+          <td>A dialog box or a window</td>
+        </tr>
+
+        <tr>
+          <td>&lt;figure&gt;&lt;/figure&gt;</td>
+          <td>
+            An independent content block featuring images, diagrams or
+            illustrations
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;figcaption&gt;&lt;/figcaption&gt;</td>
+          <td>Caption that describe a figure</td>
+        </tr>
+
+        <tr>
+          <td>&lt;mark&gt;&lt;/mark&gt;</td>
+          <td>Displays a portion of highlighted text with in a page content</td>
+        </tr>
+
+        <tr>
+          <td>&lt;nav&gt;&lt;/nav&gt;</td>
+          <td>Navigation links for the user in a document</td>
+        </tr>
+
+        <tr>
+          <td>&lt;menuitem&gt;&lt;/menuitem&gt;</td>
+          <td>
+            The specific menu item that a user can raise from a pop up menu
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;meter&gt;&lt;/meter&gt;</td>
+          <td>Describes the scalar measurement with in a known array</td>
+        </tr>
+        <tr>
+          <td>&lt;progress&gt;&lt;/progress&gt;</td>
+          <td>Displays the progress of a task usually a progress bar</td>
+        </tr>
+
+        <tr>
+          <td>&lt;rp&gt;&lt;/rp&gt;</td>
+          <td>
+            Describes text within the browsers that do not support ruby
+            notations
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;rt&gt;&lt;/rt&gt;</td>
+          <td>Displays east asian typography character details</td>
+        </tr>
+
+        <tr>
+          <td>&lt;summary&gt;&lt;/summary&gt;</td>
+          <td>a visible heading for details element</td>
+        </tr>
+        <tr>
+          <td>&lt;bdi&gt;&lt;/bdi&gt;</td>
+          <td>
+            Helps you format parts of text in a different direction than other
+            text
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;time&gt;&lt;/time&gt;</td>
+          <td>Identifies the time and date</td>
+        </tr>
+        <tr>
+          <td>&lt;wbr&gt;</td>
+          <td>A line break within the content</td>
+        </tr>
+      </table>
+    </div>
+    <!-- SOME OTHER USEFUL TAGS -->
+    <div id="SOME OTHER USEFUL TAGS">
+      <br />
+      <br />
+      <h2>SOME OTHER USEFUL TAGS</h2>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <td>&lt;canvas&gt;&lt;/canvas&gt;</td>
+          <td>
+            allow you to draw 2D shapes on the web page with the help of
+            javascript
+          </td>
+        </tr>
+
+        <tr>
+          <td>&lt;map&gt;&lt;/map&gt;</td>
+          <td>Specifies an image map</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
